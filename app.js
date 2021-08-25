@@ -27,7 +27,7 @@ app.use(session({
 app.use(passport.initialize())
 app.use(passport.session())
 
-mongoose.connect("mongodb://localhost:27017/userDB", {useNewUrlParser:true})
+mongoose.connect("mongodb+srv://nexusdatabase:NH2020@cluster0.vbamo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {useNewUrlParser:true})
 mongoose.set("useCreateIndex", true)
 const userSchema = new mongoose.Schema({
     email: String,
